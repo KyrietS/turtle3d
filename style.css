@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+#myCanvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border:1px solid #000000;
+}
+
+main {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#container {
+    width: 850px;
+    float: left;
+}
+#help {
+    width: 350px;
+    float: left;
+}
+
+#myForm {
+    margin: 20px auto;
+    text-align: left;
+    width: 800px;
+}
+
+table {
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
+}
+td {
+    padding: 3px;
+}
+thead {
+    text-align: center;
+    font-weight: bold;
+}
+
+#cmd {
+    width: 700px;
+}
+#console {
+    border: 1px solid #000;
+    width: 800px;
+    height: 120px;
+    padding: 5px;
+}
+button {
+    font-size: 1.3em;
+    background-color: #8bca79;
+    border: 1px solid brown;
+    color: brown;
+}
