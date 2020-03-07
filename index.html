@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Sebastian Fojcik">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <title>Żółw 3D</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <div id="container">
+            <canvas id="myCanvas" width="800" height="500">
+            </canvas>
+            <div id="myForm">
+                <textarea id="console" placeholder="Write your code here"></textarea>
+                <br>
+                <button onclick="run();">Execute</button>
+                <button onclick="reset();">Reset</button>
+                <button style="float: right;" onclick="ex3();">Ex.3</button>
+                <button style="float: right;" onclick="ex2();">Ex.2</button>
+                <button style="float: right;" onclick="ex1();">Ex.1</button>
+            </div>
+        </div>
+        <aside id="help">
+            <table>
+                <thead>
+                    <tr>
+                        <td colspan="2">Manual</td>
+                    </tr>
+                    <tr>
+                        <td>Command</td>
+                        <td>Description</td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td><code>goto [x] [y] [z]</code></td>
+                    <td>moves turtle to (x,y,z) location</td>
+                </tr>
+                <tr>
+                    <td><code>forward [n]</code></td>
+                    <td>moves turtle [n] steps forward</td>
+                </tr>
+                <tr>
+                    <td><code>rotX [deg]</code></td>
+                    <td>rotates turtle by [deg] degrees around 0X axis</td>
+                </tr>
+                <tr>
+                    <td><code>rotY [deg]</code></td>
+                    <td>rotates turtle by [deg] degrees around 0Y axis</td>
+                </tr>
+                <tr>
+                    <td><code>rotZ [deg]</code></td>
+                    <td>rotates turtle by [deg] degrees around 0X axis</td>
+                </tr>
+                <tr>
+                    <td><code>repeat [n] [cmds]</code></td>
+                    <td>repeats [n] times commands [cmds]</td>
+                </tr>
+                <tr>
+                    <td><code>wait [n]</code></td>
+                    <td>waits [n] miliseconds</td>
+                </tr>
+                <tr>
+                    <td><code>penup</code></td>
+                    <td>turns off drawing for moving turtle.</td>
+                </tr>
+                <tr>
+                    <td><code>pendown</code></td>
+                    <td>turns on drawing for moving turtle. On by default.</td>
+                </tr>
+                <tr>
+                    <td><code>pensize [n]</code></td>
+                    <td>sets pen size. 1 by default</td>
+                </tr>
+                <tr>
+                    <td><code>pencolor</code></td>
+                    <td>sets pen color</td>
+                </tr>
+                <tr>
+                    <td><code>show</code></td>
+                    <td>sets turtle to visible mode (default)</td>
+                </tr>
+                <tr>
+                    <td><code>hide</code></td>
+                    <td>sets turtle to hidden mode </td>
+                </tr>      
+                <tr>
+                    <td><code>trim [on|off]</code></td>
+                    <td>turns on/off trimming lines to terrarium planes</td>
+                </tr>   
+            </table>
+            <p>Rotate the camera by holding <strong>Left Mouse Button</strong> over canvas.</p>
+            <p>Zoom the view using <strong>Scroll</strong>.</p>
+        </aside>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
